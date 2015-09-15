@@ -17,7 +17,7 @@ output_csv = open(output_file, 'w')
 csv = unicodecsv.writer(output_csv, encoding='utf-8', delimiter=';', quoting=unicodecsv.QUOTE_ALL)
 
 start_url = "{}/{}".format(BASE_URL, letter)
-requests_cache.install_cache('demo_cache')
+requests_cache.install_cache('cache')
 html_doc = requests.get(start_url).content
 
 doc = BeautifulSoup(html_doc, 'html.parser')
