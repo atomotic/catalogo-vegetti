@@ -1,0 +1,4 @@
+requests
+requests-cache
+beautifulsoup4
+unicodecsv
